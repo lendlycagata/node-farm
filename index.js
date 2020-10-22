@@ -4,32 +4,24 @@ const url = require('url');
 const slugify = require('slugify');
 const replaceTemplate = require('./modules/replaceTemplate');
 
-/////////////////////////////////
-// FILES
+//db connection
+const mongoose = require('mongoose');
+const dotenv = require('dotenv');
+dotenv.config({ path: './config.env' });
 
-// Blocking, synchronous way
-// const textIn = fs.readFileSync('./txt/input.txt', 'utf-8');
-// console.log(textIn);
-// const textOut = `This is what we know about the avocado: ${textIn}.\nCreated on ${Date.now()}`;
-// fs.writeFileSync('./txt/output.txt', textOut);
-// console.log('File written!');
-
-// Non-blocking, asynchronous way
-// fs.readFile('./txt/start.txt', 'utf-8', (err, data1) => {
-//   if (err) return console.log('ERROR! 💥');
-
-//   fs.readFile(`./txt/${data1}.txt`, 'utf-8', (err, data2) => {
-//     console.log(data2);
-//     fs.readFile('./txt/append.txt', 'utf-8', (err, data3) => {
-//       console.log(data3);
-
-//       fs.writeFile('./txt/final.txt', `${data2}\n${data3}`, 'utf-8', err => {
-//         console.log('Your file has been written 😁');
-//       })
-//     });
-//   });
-// });
-// console.log('Will read file!');
+const DB = process.env.DATABASE.replace(
+  '<PASSWORD>',
+  process.env.DATABASE_PASSWORD
+);
+var db=mongoose.connection; 
+mongoose
+  .connect(DB, {
+    useUnifiedTopology: true,
+    useNewUrlParser: true,
+    useCreateIndex: true,
+    useFindAndModify: false
+  })
+  .then(() => console.log('DB connection successful!'));
 
 /////////////////////////////////
 // SERVER
@@ -46,12 +38,23 @@ const tempProduct = fs.readFileSync(
   'utf-8'
 );
 
+const feed = fs.readFileSync(
+  `${__dirname}/templates/template-feedback.html`,
+  'utf-8'
+);
+
+const success = fs.readFileSync(
+  `${__dirname}/templates/success.html`,
+  'utf-8'
+);
+
 const data = fs.readFileSync(`${__dirname}/dev-data/data.json`, 'utf-8');
 const dataObj = JSON.parse(data);
 
 const slugs = dataObj.map(el => slugify(el.productName, { lower: true }));
 console.log(slugs);
 
+const { parse } = require('querystring');
 const server = http.createServer((req, res) => {
   const { query, pathname } = url.parse(req.url, true);
 
@@ -79,10 +82,43 @@ const server = http.createServer((req, res) => {
     res.writeHead(200, {
       'Content-type': 'application/json'
     });
-    res.end(data);
+    res.end(data); 
+
+  }//feedback
+  else if (pathname === '/feedback') {
+    res.writeHead(200, {
+      'Content-type': 'text/html'
+    });
+    res.end(feed); 
+   
+  }// success
+  else if (pathname === '/success') {
+    res.writeHead(200, {
+      'Content-type': 'text/html'
+    });
+    
+   save = []
+    if (req.method === 'POST'){
+      let body='';
+      req.on('data', chunk => {
+        body += chunk.toString();
+        
+      });
+      req.on('end', () => {
+        
+        db.collection('feedback').insertOne(parse(body),function(err, collection){ 
+         if (err) throw err; 
+        console.log("Record inserted Successfully");           
+       });      
+        res.end(success); 
+      });      
+
+    } 
+    
+  }
 
     // Not found
-  } else {
+  else {
     res.writeHead(404, {
       'Content-type': 'text/html',
       'my-own-header': 'hello-world'
@@ -90,6 +126,9 @@ const server = http.createServer((req, res) => {
     res.end('<h1>Page not found!</h1>');
   }
 });
+
+
+
 
 server.listen(8000, '127.0.0.1', () => {
   console.log('Listening to requests on port 8000');

@@ -1,0 +1,100 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title> Feedback Form</title> 
+		
+		
+<link rel="stylesheet"
+href= 
+"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+integrity= 
+"sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+crossorigin="anonymous">	 
+		
+		
+</head> 
+<style>
+.main {
+  padding: 20px;
+  font-family: 'Helvetica', sans-serif;
+  box-shadow: 5px 5px 7px 5px #6a6e74;
+}
+.main h1 {
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Helvetica', sans-serif;
+  color: #4b286d;
+}
+input {
+  font-family: 'Helvetica', sans-serif;
+  width: 100%;
+  font-size: 20px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: none;
+  border-bottom: 2px solid #66cc00;
+}
+textarea {
+  font-family: 'Helvetica', serif;
+  width: 100%;
+  font-size: 20px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: none;
+  border-bottom: 2px solid #66cc00;
+}
+input[type='submit'] {
+  font-family: 'Helvetica', sans-serif;
+  width: 100%;
+  background-color: #2b8000;
+  border: none;
+  color: #4b286d;
+  padding: 16px 32px;
+  margin: 4px 2px;
+  border-radius: 10px;
+}
+
+</style>
+<body> 
+	
+	<br> 
+	<br> 
+	<br> 
+	<div class="container" > 
+		<div class="row"> 
+		<div class="col-md-3"> 
+					
+		</div> 
+				
+		<div class="col-md-6 main"> 
+					
+			<form action="/success" method="post"> 
+					
+			<h1> Feedback form </h1> 
+							
+			<input class="box" type="text" name="name" id="name"
+			placeholder="Name" required /><br> 
+							
+			<input class="box" type="email" name="email" id="email"
+			placeholder="E-Mail " required /><br> 
+							
+			
+							
+			<textarea class="box" type="text" name="message" id="message"
+			placeholder="Message"  required></textarea> <br> 
+						
+			<input type="submit" id=""
+			name="" value="" /><br> 
+					
+			</form> 
+					
+		</div> 
+				
+				
+		<div class="col-md-3"> 
+		</div> 
+				
+	</div> 
+	</div> 
+</body> 
+</html>	 

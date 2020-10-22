@@ -1,57 +1,46 @@
 [
   {
     "id": 0,
-    "productName": "Fresh Avocados",
-    "image": "🥑",
-    "from": "Spain",
-    "nutrients": "Vitamin B, Vitamin K",
-    "quantity": "4 🥑",
-    "price": "6.50",
+    "productName": "Smart Camera",
+    "image": "🎥",
+    "from": "Internet required",
+    "nutrients": "Self-monitored Service",
+    "quantity": "3 year term ",
+    "price": "12/mo",
     "organic": true,
-    "description": "A ripe avocado yields to gentle pressure when held in the palm of the hand and squeezed. The fruit is not sweet, but distinctly and subtly flavored, with smooth texture. The avocado is popular in vegetarian cuisine as a substitute for meats in sandwiches and salads because of its high fat content. Generally, avocado is served raw, though some cultivars, including the common 'Hass', can be cooked for a short time without becoming bitter. It is used as the base for the Mexican dip known as guacamole, as well as a spread on corn tortillas or toast, served with spices."
+    "description": "Monitor your home from anywhere. See who’s at the door or keep an eye on pets and family members with live video. Watch from anywhere, any time and know what’s happening both inside and around your home."
   },
   {
     "id": 1,
-    "productName": "Goat and Sheep Cheese",
-    "image": "🧀",
-    "from": "Portugal",
-    "nutrients": "Vitamin A, Calcium",
-    "quantity": "250g",
-    "price": "5.00",
-    "organic": false,
-    "description": "Creamy and distinct in flavor, goat cheese is a dairy product enjoyed around the world. Goat cheese comes in a wide variety of flavors and textures, from soft and spreadable fresh cheese to salty, crumbly aged cheese. Although it’s made using the same coagulation and separation process as cheese made from cow’s milk, goat cheese differs in nutrient content."
+    "productName": "Smart Automation",
+    "image": "📱",
+    "from": "Home automation",
+    "nutrients": "Self-monitored Service",
+    "quantity": "Bundle price on 3 or 5 year term",
+    "price": "18/mo",
+    "organic": true,
+    "description": "Automate your home, once you’ve experienced the convenience of home automation, you’ll wonder how you ever got along without it. From your lights to the temperature, TELUS Smart Automation lets you integrate smart home devices like smart plugs, smart light bulbs, and smart thermostats – all with one single app. Plus you can find additional products from leading manufacturers that are compatible with the TELUS SmartHome Security system."
   },
   {
     "id": 2,
-    "productName": "Apollo Broccoli",
-    "image": "🥦",
-    "from": "Portugal",
-    "nutrients": "Vitamin C, Vitamin K",
-    "quantity": "3 🥦",
-    "price": "5.50",
+    "productName": "Secure",
+    "image": "🔐",
+    "from": "Home security",
+    "nutrients": "Professional monitoring",
+    "quantity": "Bundle price on 3 or 5 year term",
+    "price": "20/mo",
     "organic": true,
-    "description": "Broccoli is known to be a hearty and tasty vegetable which is rich in dozens of nutrients. It is said to pack the most nutritional punch of any vegetable. When we think about green vegetables to include in our diet, broccoli is one of the foremost veggies to come to our mind. Broccoli is a cruciferous vegetable and part of the cabbage family, which includes vegetables such as Brussel sprouts and kale. Although the tastes are different, broccoli and these other vegetables are from the same family."
+    "description": "Deter break-ins, 60% of intruders will move on to another home if they see a camera or signs of a security system.* If intruders attempt a break-in, your door, window or motion sensors will notify you and our central monitoring service. Protect your home with 24/7 professional monitoring.Feel safe, knowing you have a professionally-monitored service. Our experts are ready to dispatch authorities to protect your home if an alarm is triggered while you’re away. Add video to monitor your home from anywhere. Get the most comprehensive home security system coverage by adding a camera – or additional cameras – to your plan for just $10/mo each. See who’s at the door or keep an eye on pets and family members with live video. Watch from anywhere, any time and know what’s happening both inside and around your home."
   },
   {
     "id": 3,
-    "productName": "Baby Carrots",
-    "image": "🥕",
-    "from": "France",
-    "nutrients": "Vitamin A, Vitamin K",
-    "quantity": "20 🥕",
-    "price": "3.00",
+    "productName": "Control + Video",
+    "image": "👮‍♂️",
+    "from": "Home security",
+    "nutrients": "Professional monitoring and Home automation",
+    "quantity": "Bundle price on 3 or 5 year term",
+    "price": "33/mo",
     "organic": true,
-    "description": "The carrot is a root vegetable that is often claimed to be the perfect health food. It is crunchy, tasty and highly nutritious. Carrots are a particularly good source of beta-carotene, fiber, vitamin K, potassium and antioxidants. Carrots have a number of health benefits. They are a weight loss friendly food and have been linked to lower cholesterol levels and improved eye health."
-  },
-  {
-    "id": 4,
-    "productName": "Sweet Corncobs",
-    "image": "🌽",
-    "from": "Germany",
-    "nutrients": "Vitamin C, Magnesium",
-    "quantity": "2 🌽",
-    "price": "2.00",
-    "organic": false,
-    "description": "Also known as maize, corn is one of the most popular cereal grains in the world. Popcorn and sweet corn are commonly eaten varieties, but refined corn products are also widely consumed, frequently as ingredients in foods. These include tortillas, tortilla chips, polenta, cornmeal, corn flour, corn syrup, and corn oil. Whole-grain corn is as healthy as any cereal grain, rich in fiber and many vitamins, minerals, and antioxidants."
+    "description": "Automate your home, once you’ve experienced the convenience of home automation, you’ll wonder how you ever got along without it. From your lights to the temperature, TELUS Smart Automation lets you integrate smart home devices like smart plugs, smart light bulbs, and smart thermostats – all with one single app. Plus you can find additional products from leading manufacturers that are compatible with the TELUS SmartHome Security system. Deter break-ins, 60% of intruders will move on to another home if they see a camera or signs of a security system.* If intruders attempt a break-in, your door, window or motion sensors will notify you and our central monitoring service. Protect your home with 24/7 professional monitoring, get the most comprehensive home security system coverage by adding a camera – or additional cameras – to your plan for just $10/mo each. See who’s at the door or keep an eye on pets and family members with live video. Watch from anywhere, any time and know what’s happening both inside and around your home. Add video to monitor your home from anywhere. Get the most comprehensive home security system coverage by adding a camera to your plan. See who’s at the door or keep an eye on pets and family members with live video. Watch from anywhere, any time and know what’s happening both inside and around your home. "
   }
 ]

@@ -9,11 +9,11 @@
       rel="stylesheet"
     />
     <link
-      rel="icon"
+      rel=""
       href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/155/ear-of-maize_1f33d.png"
     />
 
-    <title>{%PRODUCTNAME%} {%IMAGE%} /// NODE FARM</title>
+    <title>{%PRODUCTNAME%}-HOME SECURITY</title>
 
     <style>
       *,
@@ -32,16 +32,16 @@
       body {
         padding: 5rem 5rem 10rem;
         line-height: 1.7;
-        font-family: 'Nunito Sans', sans-serif;
-        color: #555;
+        font-family: 'Helvetica', sans-serif;
+        color: #4b286d;
         min-height: 100vh;
-        background: linear-gradient(to bottom right, #9be15d, #00e3ae);
+        background: linear-gradient(to bottom right, #ffffff, #f2f2f2);
       }
 
       h1 {
-        font-family: 'Megrim', sans-serif;
+        font-family: 'Helvetica', sans-serif;
         font-size: 6rem;
-        color: white;
+        color: #4b286d;
         transform: skewY(-5deg);
         text-align: center;
         position: relative;
@@ -56,7 +56,7 @@
         position: absolute;
         top: 105%;
         left: 50%;
-        background: linear-gradient(to bottom, #9be15d, #00e3ae);
+        background: linear-gradient(to bottom, #66cc00, #66cc00);
         opacity: 0.8;
         z-index: -1;
         transform: skewY(370deg) translate(-50%, -50%);
@@ -192,15 +192,15 @@
 
       .product__back:hover,
       .product__back:active {
-        background-color: #79e17b;
+        background-color: #66cc00;
       }
 
       .product__name {
-        background: linear-gradient(to bottom, #9be15d, #00e3ae);
+        background: linear-gradient(to bottom, #66cc00, #66cc00);
         padding: 1rem;
-        font-family: 'Megrim', sans-serif;
+        font-family: 'Helvetica', sans-serif;
         font-size: 4rem;
-        color: white;
+        color: #4b286d;
         text-align: center;
         word-spacing: 2px;
       }
@@ -223,8 +223,8 @@
       .product__link:link,
       .product__link:visited {
         display: block;
-        background-color: #79e17b;
-        color: white;
+        background-color: #66cc00;
+        color: #4b286d;
         font-size: 1.6rem;
         font-weight: 700;
         text-transform: uppercase;
@@ -241,7 +241,7 @@
 
       .product__link:hover,
       .product__link:active {
-        background-color: #9be15d;
+        background-color: #2b8000;
         transform: scale(1.1) skewX(-20deg);
       }
 
@@ -267,10 +267,10 @@
 
   <body>
     <div class="container">
-      <h1>🌽 Node Farm 🥦</h1>
+      <h1> HOME SECURITY </h1>
 
       <figure class="product">
-        <div class="product__organic {%NOT_ORGANIC%}"><h5>Organic</h5></div>
+       
         <a href="/overview" class="product__back">
           <span class="emoji-left">👈</span>Back
         </a>
@@ -287,15 +287,15 @@
         </div>
         <h2 class="product__name">{%PRODUCTNAME%}</h2>
         <div class="product__details">
-          <p><span class="emoji-left">🌍</span>From {%FROM%}</p>
-          <p><span class="emoji-left">❤️</span>{%NUTRIENTS%}</p>
+          <p><span class="emoji-left">🎥</span>{%FROM%}</p>
+          <p><span class="emoji-left">📱</span>{%NUTRIENTS%}</p>
           <p><span class="emoji-left">📦</span>{%QUANTITY%}</p>
-          <p><span class="emoji-left">🏷</span>{%PRICE%}€</p>
+          <p><span class="emoji-left">🏷</span>{%PRICE%}$</p>
         </div>
   
-        <a href="#" class="product__link">
-          <span class="emoji-left">🛒</span>
-          <span>Add to shopping card ({%PRICE%}€)</span>
+        <a href="http://localhost:8000/feedback" class="product__link">
+          <span class="emoji-left"></span>
+          <span>Product Calibration and Feedback</span>
         </a>
   
         <p class="product__description">
@@ -304,5 +304,6 @@
       </figure>
       
     </div>
+
   </body>
 </html>
